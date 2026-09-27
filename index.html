@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Mistuu ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="hearts"></div>
+
+    <audio id="birthdayMusic" loop>
+        <source src="music/birthday-song.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- INTRO -->
+    <section id="intro" class="screen">
+        <div class="intro-box">
+
+            <div class="big-emoji">🚨</div>
+
+            <h1>WARNING!</h1>
+
+            <p>A very special person is getting older today...</p>
+
+            <div class="terminal">
+                <p>&gt; Searching for Mistuu...</p>
+                <p>&gt; Mistuu found ❤️</p>
+                <p>&gt; Checking birthday...</p>
+                <p>&gt; Age increasing...</p>
+                <p class="red">&gt; ERROR: TOO CUTE 😂</p>
+            </div>
+
+            <button class="pink-button" onclick="startWebsite()">
+                I'M READY 😏
+            </button>
+
+        </div>
+    </section>
+
+
+    <!-- LOADING -->
+    <section id="loading" class="screen">
+        <div class="loading-box">
+
+            <div class="cake">🎂</div>
+
+            <h2>Analyzing Mistuu...</h2>
+
+            <p id="loadingText">Calculating cuteness...</p>
+
+            <div class="progress-container">
+                <div id="progress"></div>
+            </div>
+
+            <p id="percentage">0%</p>
+
+        </div>
+    </section>
+
+
+    <!-- MAIN WEBSITE -->
+    <main id="website">
+
+        <!-- HERO -->
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <p class="badge">🚨 OFFICIAL BIRTHDAY ANNOUNCEMENT 🚨</p>
+
+                <h1>
+                    Happy Birthday
+                    <span>Mistuu</span>
+                </h1>
+
+                <p class="hero-text">
+                    Congratulations! You have successfully survived
+                    another year of being cute, annoying, dramatic
+                    and absolutely adorable. 😂❤️
+                </p>
+
+                <button class="pink-button" onclick="goTo('gallery')">
+                    Continue 💕
+                </button>
+
+            </div>
+
+            <div class="floating-cake">🎂</div>
+
+        </section>
+
+
+        <!-- STATS -->
+        <section class="section white-section">
+
+            <h2>📊 Mistuu Statistics</h2>
+
+            <p class="subtitle">
+                Officially calculated by absolutely no scientific method 😂
+            </p>
+
+            <div class="stats">
+
+                <div class="stat">
+                    <span>🥰</span>
+                    <strong>99%</strong>
+                    <p>Cuteness</p>
+                </div>
+
+                <div class="stat">
+                    <span>😤</span>
+                    <strong>87%</strong>
+                    <p>Attitude</p>
+                </div>
+
+                <div class="stat">
+                    <span>😂</span>
+                    <strong>100%</strong>
+                    <p>Drama</p>
+                </div>
+
+                <div class="stat">
+                    <span>❤️</span>
+                    <strong>∞%</strong>
+                    <p>Love</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PHOTO GALLERY -->
+        <section id="gallery" class="section">
+
+            <h2>📸 Evidence Gallery</h2>
+
+            <p class="subtitle">
+                Six pieces of evidence proving that you're cute 😂
+            </p>
+
+            <div class="gallery">
+
+                <div class="photo-card">
+                    <img src="photos/photo1.jpg" alt="Mistuu photo 1">
+                    <p>👀 me and my cutie pie 😁</p>
+                </div>
+
+                <div class="photo-card">
+                    <img src="photos/photo2.jpg" alt="Mistuu photo 2">
+                    <p>🥹 My Favorite Person</p>
+                </div>
+
+                <div class="photo-card">
+                    <img src="photos/photo3.jpg" alt="Mistuu photo 3">
+                    <p>❤️ Too Beautiful</p>
+                </div>
+
+                <div class="photo-card">
+                    <img src="photos/photo4.jpg" alt="Mistuu photo 4">
+                    <p>😁green parrot </p>
+                </div>
+
+                <div class="photo-card">
+                    <img src="photos/photo5.jpg" alt="Mistuu photo 5">
+                    <p>😘 cuteness overloaded </p>
+                </div>
+
+                <div class="photo-card">
+                    <img src="photos/photo6.jpg" alt="Mistuu photo 6">
+                    <p>😂 chasmiss </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- LOVE CALCULATOR -->
+        <section class="section love-section">
+
+            <h2>❤️ Love Calculator</h2>
+
+            <p class="subtitle">
+                Let's calculate how much I love you...
+            </p>
+
+            <button class="pink-button" onclick="calculateLove()">
+                Calculate ❤️
+            </button>
+
+            <h3 id="loveResult"></h3>
+
+        </section>
+
+
+        <!-- REASONS -->
+        <section class="section white-section">
+
+            <h2>💌 Reasons Why I Love You</h2>
+
+            <div class="reasons">
+
+                <div>01 ❤️ You're ridiculously cute.</div>
+
+                <div>02 😂 You make boring days fun.</div>
+
+                <div>03 😭 You somehow tolerate me.</div>
+
+                <div>04 🥹 Your smile makes everything better.</div>
+
+                <div>05 😂 You're my favorite person babe.</div>
+
+                <div>06 🫶 You're simply YOU.</div>
+
+            </div>
+
+        </section>
+
+
+        <!-- MUSIC -->
+        <section class="music-section">
+
+            <div class="music-card">
+
+                <div class="music-icon">🎵</div>
+
+                <h2>Your favorite Song</h2>
+
+                <p>specially for my baby girl 😘</p>
+
+                <button id="musicButton" class="music-button" onclick="toggleMusic()">
+                    ▶ PLAY SONG
+                </button>
+
+                <p class="music-note">
+                    🎶 Made specially for Mistuu ❤️
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- FINAL -->
+        <section class="final-section">
+
+            <div>
+
+                <div class="gift">🎁</div>
+
+                <h2>One Last Thing...</h2>
+
+                <p>There's a very important button below.</p>
+
+                <button class="danger-button" onclick="secretMessage()">
+                    DON'T CLICK THIS 🚫
+                </button>
+
+                <div id="secret"></div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FOOTER -->
+        <footer>
+            <h3>Made with ❤️ for Mistuu</h3>
+            <p>Official Mistuu Birthday Website © 2026 😂</p>
+        </footer>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
